@@ -103,4 +103,50 @@ footer ul li {
   float: left;
   margin-left: 10px;
 }
+
+/*return*/
+.return{
+  float: left;
+  font-size: 16px;
+  margin: 10px;
+  
+}
 /*home*/
+
+
+/*index*/
+.posts{
+  float: left;
+  margin-left: 10px;
+  margin: 15px,0px;
+}
+
+.header-menu{
+  font-size: 12px;
+  font-weight: normal;
+  float: right;
+  
+}
+
+.command{
+  font-size: 12px;
+}
+
+/*Add new post*/
+.input[type="text"], textarea{
+  box-sizing: border-box;
+  width: 400px;
+  padding: 5px;
+}
+
+.textarea{
+  height: 160px;
+  
+}
+
+/*error*/
+.error{
+  font-size: 12px;
+  font-weight: bold;
+  color: tomato;
+}

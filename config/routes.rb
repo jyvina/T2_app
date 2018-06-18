@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   end
   get 'static_pages/contact'
   get 'static_pages/creater_date'
-  get 'users/new'
+  #get 'users/new'
   resources :users
   
 

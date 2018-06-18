@@ -1,22 +1,25 @@
 <%= form_for @post do |f| %>
 
-<div class="Post title">
-    Title
-</div>
-<p><%= f.text_field :title, placeholder: 'enter title' %>
- <% if @post.errors.messages[:title].any? %>
- <span class="error"><%= @post.errors.messages[:title][0] %></span>
- <% end %>
-</p>
-<div class="Post text">
-    Text
-</div>
-<p><%= f.text_area :body, placeholder: 'enter body text' %>
-<% if @post.errors.messages[:body].any? %>
- <span class="error"><%= @post.errors.messages[:body][0] %></span>
- <% end %>
-</p>
+<div class="Post">
+
+<%= render 'posts/error_messages'%>
+ <div class = "Post title">
+   <%= f.label :Title%>
+   <p><%= f.text_field :title, placeholder: 'enter title' %>
+     
+  </p>
+
+ </div>
+ 
+ <div class = "Post text">
+   <%= f.label :Text %>
+   <p>
+   <%= f.text_area :body, placeholder: 'enter text' %>
+    
+   </p>
+ </div>
 
 <p><%= f.submit %>
 </p>
 <% end %>
+</div>

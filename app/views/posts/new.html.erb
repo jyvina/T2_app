@@ -1,4 +1,8 @@
-<h2>Add New Post</h2>
+<% provide(:title,"New Post") %>
+<h2>New Post</h2>
 
+<div class="container">
 <%= render 'form' %>
+
 <%= link_to "return", posts_path %>
+</div>

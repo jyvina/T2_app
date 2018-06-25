@@ -2,7 +2,17 @@
     <div class="container">
         <%= link_to "Try&Trainy", root_path ,id:"logo" %>
         <nav>
-            
+         <div class= "row">
+           
+             <ul class="nav navbar-nav navbar-right">
+                 <aside class="col-xs-4">
+               <li>
+                  <%= link_to "Log in",new_session_path,class: "btn btn-primary" %>
+               </li>
+                </aside>
+             </ul>
+           
+          </div>
         </nav>
     </div>
 </header>

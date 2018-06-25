@@ -82,6 +82,8 @@ p {
   text-decoration: none;
 }
 
+
+
 /*footer*/
 footer {
   margin-top: 45px;
@@ -231,4 +233,18 @@ input, textarea {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
 }

@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  
 
   
-  
+
   root 'static_pages#home'
   
   resources :posts do
@@ -10,8 +9,9 @@ Rails.application.routes.draw do
   end
   get 'static_pages/contact'
   get 'static_pages/creater_date'
-  #get 'users/new'
+  
   resources :users
+  resources :sessions, only:[:new, :create, :destroy]
   
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

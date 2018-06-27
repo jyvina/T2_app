@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180625134404) do
+ActiveRecord::Schema.define(version: 20180627141006) do
+
+  create_table "clients", force: :cascade do |t|
+    t.string "name"
+    t.date "birth"
+    t.text "address"
+    t.string "email"
+    t.string "category"
+    t.text "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "comments", force: :cascade do |t|
     t.string "body"
@@ -34,6 +45,7 @@ ActiveRecord::Schema.define(version: 20180625134404) do
     t.datetime "updated_at", null: false
     t.string "password_digest"
     t.string "remember_digest"
+    t.index ["email"], name: "index_users_on_email", unique: true
   end
 
 end

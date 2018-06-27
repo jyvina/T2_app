@@ -12,8 +12,7 @@ class StaticPagesController < ApplicationController
     def reservation
     end
     
-    def client
-    end
+    
     
     def search
     end

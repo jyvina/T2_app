@@ -1,0 +1,23 @@
+<% provide(:title, 'Clients') %>
+<%= render "static_pages/menubar" %>
+
+<h2>Clients</h2>
+<div class = "container">
+    <div class= "jumbotron">
+        <div class="clients">
+            <ul>
+                <% @client.each do |client| %>
+                    <li>
+                        <%= link_to client.name, client_path(client) %>
+                        
+                    </li>
+    <% end %>
+</ul>
+
+        </div>
+    </div>
+    <div class="return">
+        <%= link_to "return to home", root_path %>
+    </div>
+
+</div>

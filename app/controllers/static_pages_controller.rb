@@ -1,10 +1,20 @@
 class StaticPagesController < ApplicationController
-  def home
-  end
   
-  def contact
-  end
+  private
   
-  def creater date
-  end
+    def contact
+    end
+  
+    def creater date
+    end
+  
+  
+    def reservation
+    end
+    
+    def client
+    end
+    
+    def search
+    end
 end

@@ -1,0 +1,16 @@
+<div class="container">
+        <ul class="nav nav-tabs">
+            <li role="presentation"><a href="https://trainers-app-jyvina.c9users.io/static_pages/reservation">Reservation</a></li>
+	        <li role="presentation"><a href="https://trainers-app-jyvina.c9users.io/static_pages/client">Client registration</a></li>
+	        <li role="presentation"><a href="https://trainers-app-jyvina.c9users.io/static_pages/search">Search</a></li>
+	        <nav>
+        <ul class="nav navbar-nav navbar-right">
+            <div class="logout">
+               <% if logged_in? %>
+                  <%= link_to "Log out", logout_path, method: :delete %>
+               <% end %>
+            </div>
+        </ul>
+        </nav>
+        </ul>
+</div>

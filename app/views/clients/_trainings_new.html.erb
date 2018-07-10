@@ -1,0 +1,27 @@
+<div class="col-md-14">
+    <div class="panel panel-danger">
+      
+	    <div class="panel-body">
+	        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">New Training</button>
+            <div id="demo" class="collapse">
+
+            <%= form_for([@client,@client.trainings.build]) do |f| %>
+                <%= f.label :purpose %>
+                <%= f.text_field :purpose, class:'form-control' %>
+         
+                <%= f.label :goal %>
+                <%= f.text_field :goal ,class:'form-control' %>
+         
+                <%= f.label :quantification %>
+                <%= f.number_field :quantification, class:'form-control' %>
+         
+                <%= f.label :supplement %>
+                <%= f.text_area :supplement, class:'form-control' %>
+         
+                <%= f.submit "Create my trainig", class: "btn btn-primary" %>
+         
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>

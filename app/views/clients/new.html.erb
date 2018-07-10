@@ -2,9 +2,11 @@
 
 <%= render "static_pages/menubar" %>
 <div class="container">
+    <h2>Client Registration</h2>
     <div class="jumbotron">
         <div class= "row">
             <div class= "col-md-6 col-md-offset-3">
+                
                 <%= form_for (@client) do |f| %>
                     <%= f.label :name %>
                     <%= f.text_field :name%>
@@ -18,8 +20,7 @@
                     <%= f.label :email %>
                     <%= f.email_field :email %>
                     
-                    <%= f.label :category %>
-                    <%= f.select :category,['スポーツ競技','筋力アップ'],class: 'category'%><br/>
+                    
                     
                     <%= f.label :comment %>
                     <%= f.text_field :comment%>

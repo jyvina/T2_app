@@ -1,0 +1,22 @@
+<div class="panel panel-success">
+    
+	    <div class="panel-heading">
+	        
+	        <h4>Clients index</h4>
+	    </div>
+	
+	    <div class="panel-body">
+            <%=link_to "New Client",new_client_path,class:"btn btn-success" %>
+            <div class="clients">
+                <ul>
+                    <% @client.each do |client| %>
+                        <li>
+                            <%= link_to client.name, client_path(client) %><br/>
+                            <%= link_to client.email,client_path(client) %>
+                        </li>
+                    <% end %>
+                </ul>
+            </div>
+        </div>
+    
+</div>

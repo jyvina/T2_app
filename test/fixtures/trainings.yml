@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  purpose: MyString
+  goal: MyString
+  quantification: 1
+  supplement: MyText
+  client: one
+
+two:
+  purpose: MyString
+  goal: MyString
+  quantification: 1
+  supplement: MyText
+  client: two

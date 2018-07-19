@@ -1,0 +1,42 @@
+<%= provide(:title,"Training Edit")%>
+
+<%= render "static_pages/menubar" %>
+<div class="container">
+<div class="col-md-13">
+    <div class="panel panel-info">
+	    <div class="panel-heading">
+		    Program Edit
+	    </div>
+	    
+	    <div class="panel-body">
+                  <%= form_for @program do |f| %>
+
+                           <%= f.label :title %>
+                           <%= f.text_field :title, class:'form-cotnrol' %>
+                
+                           <%= f.label :purpose %>
+                           <%= f.text_field :purpose, class:'form-control' %>
+         
+                           <%= f.label :goal %>
+                           <%= f.text_field :goal ,class:'form-control' %>
+         
+                           <%= f.label :quantification %>
+                           <%= f.number_field :quantification, class:'form-control' %>
+                
+                           <%= f.label :deadline %>
+                           <%= f.date_field :deadline, class:'form-control' %>
+                
+                           <%= f.label :contents %>
+                           <%= f.text_field :deadline, class:'form-control' %>
+         
+                           <%= f.label :supplement %>
+                           <%= f.text_area :supplement, class:'form-control' %>
+                           
+                           <%= f.submit "Edit Program", class: "btn btn-primary" %>
+         
+                  <% end %>
+             </div>
+             
+    </div>
+</div>
+</div>

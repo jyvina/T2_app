@@ -1,0 +1,26 @@
+<div class="col-md-7">
+        <div class="panel panel-info">
+	        <div class="panel-heading">
+		       Programs
+		       <div class="NewProgram_btn">
+		           <%= link_to "New Program", new_client_program_path(@client), class:"btn btn-primary" %>
+		       </div>
+	        </div>
+	        <div class="panel-body">
+
+                <% if @client.programs.any?%>
+                <ul>
+                    <% @client.programs.each do |program|%>
+                       <li>
+                           <%= program.title %>
+                           
+                           <%= link_to '[Details]',program_path(program),class: 'command' %>
+                           
+                           <%= link_to '[delete]',program_path(program), method: :delete, class: 'command',data:{ confirm: 'Sure?'} %>
+                       </li>
+                    <%end%>
+                </ul>
+                <%end%>
+            </div>
+        </div>
+</div>

@@ -1,3 +1,3 @@
 class Client < ApplicationRecord
-    has_many :trainings
+    has_many :programs
 end

@@ -2,11 +2,12 @@
 
 <%= render "static_pages/menubar" %>
 <div class= "container">
-    
+    <div class= "jumbotron">
     <div class= "row">
         <%= render "clients/client_information"%>
-    　  <%= render "clients/trainings_index"%>
+    　  <%= render "clients/programs_index"%>
     </div>
-        <%= render "clients/trainings_new"%>
-    
+        
+    <%= link_to "clients index" , clients_path %>
+    </div>
 </div>

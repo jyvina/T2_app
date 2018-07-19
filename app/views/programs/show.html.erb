@@ -1,0 +1,32 @@
+<%= provide(:title, "Program Details") %>
+
+<%= render "static_pages/menubar" %>
+<div class="container">
+
+<div class="col-md-4">
+        <div class="panel panel-info">
+	        <div class="panel-heading">
+		       Programs Details
+		       <%= link_to '[Edit]',edit_program_path(@program),class: 'command'%>
+	       
+	            <%= link_to "New Training", new_program_training_path(@program), class:"btn btn-primary" %>
+	        </div>
+	        <div class="panel-body">
+	            <ul>
+	               <li><%= @program.title %></li>
+                   <li><%= @program.purpose %></li>
+                   <li><%= @program.goal %></li>
+                   <li><%= @program.quantification %></li>
+                   <li><%= @program.category %></li>
+                   <li><%= @program.deadline %></li>
+                   <li><%= @program.contents %></li>
+                   
+               
+                </ul>
+                
+            </div>
+            
+        </div>
+</div>
+<%= render  "programs/trainings_index" %>
+</div>

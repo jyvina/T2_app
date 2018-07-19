@@ -9,8 +9,10 @@ Rails.application.routes.draw do
   get 'static_pages/search'
   get 'static_pages/contact'
   get 'static_pages/creater_date'
-  resources :clients do
-    resources :trainings, only:[:create, :destroy, :index, :edit, :new]
+  resources :clients, shallow: true do
+    resources :programs do
+      resources :trainings
+    end
   end
   
   resources :posts do

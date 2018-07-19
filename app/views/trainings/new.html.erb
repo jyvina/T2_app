@@ -1,0 +1,42 @@
+<%= provide(:title,"Training")%>
+
+<%= render "static_pages/menubar" %>
+<div class="container">
+<div class="col-md-13">
+    
+    <div class="panel panel-info">
+	    <div class="panel-heading">
+		    Training new
+	    </div>
+	    
+	    <div class="panel-body">
+            <%= form_for(@training ,url:program_trainings_path) do |f| %>
+                
+                
+                <%= f.label :event %>
+                <%= f.text_field :event %>
+                
+                <%= f.label :quantification %>
+                <%= f.number_field :quantification %>
+                
+                <%= f.label :date %>
+                <%= f.date_field :date %>
+                
+                <%= f.label :time %>
+                <%= f.time_field :time %>
+                
+                <%= f.label :user %></br>
+                
+                
+                <%= f.label :comments %>
+                <%= f.text_area :comment %>
+                
+                
+                
+                <%= f.submit "Create New Training", class: "btn btn-primary" %>
+            <% end %>
+        </div>
+        
+    </div>
+</div>
+</div>

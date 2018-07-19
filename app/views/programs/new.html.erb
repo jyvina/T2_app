@@ -1,0 +1,45 @@
+<%= provide(:title,"Program")%>
+
+<%= render "static_pages/menubar" %>
+<div class="container">
+<div class="col-md-13">
+    
+    <div class="panel panel-info">
+	    <div class="panel-heading">
+		    Program new
+	    </div>
+	    
+	    <div class="panel-body">
+            <%= form_for(@program,url:client_programs_path) do |f| %>
+                
+                
+                <%= f.label :title %>
+                <%= f.text_field :title %>
+                
+                <%= f.label :purpose %>
+                <%= f.text_field :purpose, class:'form-control' %>
+         
+                <%= f.label :goal %>
+                <%= f.text_field :goal ,class:'form-control' %>
+         
+                <%= f.label :quantification %>
+                <%= f.number_field :quantification, class:'form-control' %>
+                
+                <%= f.label :category %>
+                <%= f.select :category, class:'form-control' %>
+                
+                <%= f.label :deadline %>
+                <%= f.date_field :deadline, class:'form-control' %>
+                
+                <%= f.label :contents %>
+                <%= f.text_area :contents, class:'form-control' %>
+         
+                
+         
+                <%= f.submit "Create New Program", class: "btn btn-primary" %>
+            <% end %>
+        </div>
+        
+    </div>
+</div>
+</div>

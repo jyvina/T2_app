@@ -1,15 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  purpose: MyString
-  goal: MyString
-  quantification: 1
-  supplement: MyText
-  client: one
+  event: MyString
+  quantification: MyString
+  date: 2018-07-19
+  time: 2018-07-19 09:34:41
+  user: MyString
+  comment: MyText
+  program: one
 
 two:
-  purpose: MyString
-  goal: MyString
-  quantification: 1
-  supplement: MyText
-  client: two
+  event: MyString
+  quantification: MyString
+  date: 2018-07-19
+  time: 2018-07-19 09:34:41
+  user: MyString
+  comment: MyText
+  program: two

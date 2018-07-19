@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  purpose: MyString
+  goal: MyString
+  quantification: 1
+  category: MyString
+  deadline: 2018-07-19
+  contents: MyText
+  client: one
+
+two:
+  title: MyString
+  purpose: MyString
+  goal: MyString
+  quantification: 1
+  category: MyString
+  deadline: 2018-07-19
+  contents: MyText
+  client: two

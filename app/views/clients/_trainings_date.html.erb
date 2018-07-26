@@ -1,0 +1,7 @@
+<ul class="list-group">
+    <% @program.trainings.each do |training| %>
+        <li class="list-group-item"><%= training.event %>
+            <%= link_to '[Details]',"#",class: 'command' %>
+        </li>
+    <%end%>
+</ul>

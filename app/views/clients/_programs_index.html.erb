@@ -8,19 +8,24 @@
 	        </div>
 	        <div class="panel-body">
 
-                <% if @client.programs.any?%>
+                
                 <ul>
                     <% @client.programs.each do |program|%>
                        <li>
                            <%= program.title %>
+                           <%= link_to '[Details]',program_path,class:'commend' %>
                            
-                           <%= link_to '[Details]',program_path(program),class: 'command' %>
-                           
-                           <%= link_to '[delete]',program_path(program), method: :delete, class: 'command',data:{ confirm: 'Sure?'} %>
                        </li>
+                       <ul class="list-group">
+                            <% @program.training.each do |training| %>
+                                <li class="list-group-item"><%= training.event %>
+                                    <%= link_to '[Details]',"#",class: 'command' %>
+                                </li>
+                            <%end%>
+                        </ul>
                     <%end%>
                 </ul>
-                <%end%>
+                
             </div>
         </div>
 </div>

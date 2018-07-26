@@ -16,14 +16,20 @@ class ClientsController < ApplicationController
     
     def show
         @client=Client.find(params[:id])
+        @program=Program.find(params[:id])
+        
+        
     end
     
     def index
         @client=Client.all
+        
     end
     
     private
      def client_params
          params.require(:client).permit(:name,:birth,:address,:email,:category,:comment)
      end
+     
+     
 end

@@ -12,7 +12,7 @@
                     <% @client.each do |client| %>
                         <li>
                             <%= link_to client.name, client_path(client) %><br/>
-                            <%= link_to client.email,client_path(client) %>
+                            <%= link_to client.comment, client_path(client) %>
                         </li>
                     <% end %>
                 </ul>

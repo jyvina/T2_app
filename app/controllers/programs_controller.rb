@@ -6,6 +6,7 @@ class ProgramsController < ApplicationController
     
     def show
         @program=Program.find(params[:id])
+        @training=Training.all
     end
     
     
@@ -43,4 +44,5 @@ class ProgramsController < ApplicationController
           params.require(:program).permit(:title, :purpose, :goal, :quantification, :deadline, :contents, :supplement)
       
      end
+     
 end

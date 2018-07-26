@@ -10,8 +10,10 @@ Rails.application.routes.draw do
   get 'static_pages/contact'
   get 'static_pages/creater_date'
   resources :clients, shallow: true do
+    
     resources :programs do
       resources :trainings
+       
     end
   end
   
